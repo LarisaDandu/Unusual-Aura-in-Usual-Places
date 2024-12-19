@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="resources/UAUP_logo_icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="description" content="Discover new mysterious places in Aarhus. Explre the unknown. Interact with the website to find the secret places.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Unusual Aura in Usual Places</title>
+    <link rel="stylesheet" href="UAUP_style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="resources/UAUP_logo.png" class="logo" alt="UAUP logo"></a>
+            <div>
+                <a href="index.html"><h1 class="here">Home</h1></a>
+                <a href="Brickscape_Hollow_page/brickscape.html"><h1>Brickscape Hollow</h1></a>
+                <a href="Silent_Shore_page/shore.html"><h1>The Silent Shore</h1></a>
+                <a href="Ratstone_Vale_page/ratstone.html"><h1>Ratstone Vale</h1></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <img src="resources/usual_usual.png">
+        <h1>Unusual Aura in</h1>
+        <h2>Usual Places</h2>
+        <p>Your guide to eerie places in Aarhus. 
+           <br> Embark on a new adventure and discover the mysteries of the city.
+            <br>Do you dare?</p>
+            <div class="eye-buttons">
+                <a href="#locations"><button><span>YES</span></button></a>
+                <a href="error404.html"><button><span>NO</span></button></a>
+            </div>
+    </section>
+    <section class="locations-section" id="locations">
+        <h3>Pick your poison</h3>
+        <div class="locations">
+            <a href="Brickscape_Hollow_page/brickscape.html"><img src="resources/1stPlace_1.png" alt="Brickscape Hollow picture"></a>
+            <a href="Brickscape_Hollow_page/brickscape.html"><h4>Brickscape Hollow</h4></a>
+            <a href="Brickscape_Hollow_page/brickscape.html"><p> Towering structures rising 
+            <br>in disjointed, geometric patterns. </p></a>
+            <a href="Silent_Shore_page/shore.html"><img src="resources/2ndPlace_1.png" alt="The SIlent Shore picture"></a>
+            <a href="Silent_Shore_page/shore.html"><h4>The Silent Shore</h4></a>
+            <a href="Silent_Shore_page/shore.html"><p>The bench stands alone, 
+            <br>splintered, its wood bleached by time.</p></a>
+            <a href="Ratstone_Vale_page/ratstone.html"><img src="resources/3rdPlace_1.png" alt="Ratstone Vale picture"></a>
+            <a href="Ratstone_Vale_page/ratstone.html"><h4>Ratstone Vale</h4></a>
+            <a href="Ratstone_Vale_page/ratstone.html"><p> The cracked stone eyes
+            <br>stare emptily into the silence.</p></a>
+        </div>
+    </section>     
+    <footer>
+        <div class="contact">
+            <h4>Contact Us</h4>
+            <p>contact@uaup.com</p>
+            <p>+45558689xx</p>
+        </div>
+        <div class="newsletter">
+            <h4>Still not frightened?</h4>
+            <p>Subscribe to our newsletter to get the latest locations.</p>
+            <div class="user-email">
+                <textarea id="userEmailInput" rows="1" placeholder="Your Email"></textarea>
+                <div id="validEmail">
+                    <p>Enter a valid Email.</p>
+                </div>
+                <button id="subscribeBtn">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+    <script src="UAUP.js"></script>
+</body>

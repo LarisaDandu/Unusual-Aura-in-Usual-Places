@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="resources/UAUP_logo_icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="description" content="Discover new mysterious places in Aarhus. Explre the unknown. Interact with the website to find the secret places.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Ratstone Vale</title>
+    <link rel="stylesheet" href="ratstone_style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navBar">
+            <a href="..\index.html"><img src="resources/UAUP_logo.png" class="logo" alt="UAUP logo"></a>
+            <div>
+                <a href="..\index.html"><h1>Home</h1></a>
+                <a href="..\Brickscape_Hollow_page/brickscape.html"><h1>Brickscape Hollow</h1></a>
+                <a href="..\Silent_Shore_page/shore.html"><h1>The Silent Shore</h1></a>
+                <a href="ratstone.html"><h1 class="here">Ratstone Vale</h1></a>
+            </div>
+        </nav>
+    </header>
+    <section class="brickscape-banner">
+        <div class = "brickscape-title" id="brickscape-title">
+            <h1>Ratstone Vale</h1>
+            <p>The path is narrow and shrouded in shadow, the air thick with a damp,
+            <br>earthy scent. The ground beneath your feet is uneven, covered with
+            <br>cracked stones and tangled roots that seem to reach out like skeletal
+            <br>fingers. As you venture deeper, the darkness grows thicker, and an
+            <br>unsettling chill creeps along your spine. At the end of the path stands a
+            <br>worn, crumbling statue, an oddly lifelike rodent, its features obscured
+            <br>by age and neglect. The stone is cracked, the eyes hollowed out, and
+            <br>yet there's an unmistakable sense that it's watching, waiting. The
+            <br>silence around you is deafening, and the weight of something ancient
+            <br>and forgotten presses in, as if the very air holds its breath.</p>
+            <button id="openMainVideoBtn">Click to play video.</button>
+        </div>
+        <div class="overlay" id="videoOverlay" style="display: none;">
+            <div class="video-container">
+                <img src="resources/arrow_btn.png" id="arrowBtn">
+                <button class="close-btn" id="closeBtn">X</button>
+                <video id="videoElement" autoplay>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="controls">
+                    <label for="volumeSlider">Volume:</label>
+                    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+                </div>
+                <button id="playButton" class="play-button">❚❚</button>
+            </div>
+        </div>
+        <a href="#brickscapeInfo"><img src="resources/down.png" class="down-btn"></a>
+    </section>
+    <section class="brickscape-info" id="brickscapeInfo">
+        <img src="resources/info_pic.png">
+        <div class="info-text">
+            <h2>Ratstone Vale</h2>
+            <p1>The dirt pathway seems to direct people to a building, It may be a business, it may be a house, regardless of the nature of the establishment, the owners have decided long ago, it seems, to place an almost comically large rodent statue at the edge of the road, quite visible for those who need to travel in that direction. 
+                As if the country road was not eerie enough, the statue really made the creepy radar go haywire. There is something disturbing about it, something that could easily give anyone goosebumps.
+                And even if you do not find it spooky like I did, it is still worth giving it a visit, just for the hilarious design and placement. 
+                </p1>
+            <div class="location-pin">
+                <img src="resources/location1_map.png" alt="Map of location">
+                <div class="location-link">
+                    <p>56°07'08.2"N 10°06'08.8"E</p>
+                    <a href="https://www.google.com/maps/place/56°07'08.2''N+10°06'08.8''E/@56.1189685,10.1024973,43m/data=!3m1!1e3!4m8!1m3!11m2!2sFdLXYkr_iH-Coy4Uc-4vuwxTE_vVYQ!3e3!3m3!8m2!3d56.1189385!4d10.102445?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D"><p>Open in maps🔗</p></a>
+                </div>
+            </div>
+        </div>
+        <a href="#reviewsSection"><img src="resources/down.png" class="down-btn2"></a>
+    </section>
+    <section class="reviews-section" id="reviewsSection">
+        <h2>What others think of the location</h2>
+        <div class="reviews" id="reviewss">
+        </div>
+        <h4>Have you visited it yet? Share your experience!<h4>
+        <div class="leave-a-review">
+            <textarea id="reviewInput" rows="4" placeholder="How was your experience?"></textarea>
+            <div class="email-and-share">
+                <textarea id="emailInput" rows="1" placeholder="Your Email(hidden)"></textarea> 
+                <button id="saveButton">Share</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contact">
+            <h4>Contact Us</h4>
+            <p>contact@uaup.com</p>
+            <p>+45558689xx</p>
+        </div>
+        <div class="newsletter">
+            <h4>Still not frightened?</h4>
+            <p>Subscribe to our newsletter to get the latest locations.</p>
+            <div class="user-email">
+                <textarea id="userEmailInput" rows="1" placeholder="Your Email"></textarea>
+                <div id="validEmail">
+                    <p>Enter a valid Email.</p>
+                </div>
+                <button id="subscribeBtn">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+    <script src="ratstone.js"></script>    
+</body>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="resources/UAUP_logo_icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="description" content="Discover new mysterious places in Aarhus. Explre the unknown. Interact with the website to find the secret places.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>The Silent Shore</title>
+    <link rel="stylesheet" href="shore_style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navBar">
+            <a href="..\index.html"><img src="resources/UAUP_logo.png" class="logo" alt="UAUP logo"></a>
+            <div>
+                <a href="..\index.html"><h1>Home</h1></a>
+                <a href="..\Brickscape_Hollow_page/brickscape.html"><h1>Brickscape Hollow</h1></a>
+                <a href="shore.html"><h1 class="here">The Silent Shore</h1></a>
+                <a href="..\Ratstone_Vale_page/ratstone.html"><h1>Ratstone Vale</h1></a>
+            </div>
+        </nav>
+    </header>
+    <section class="brickscape-banner">
+        <div class = "brickscape-title" id="brickscape-title">
+            <h1>The Silent Shore</h1>
+            <p>The bench stands alone, weathered and splintered, its wood bleached
+            <br>by time and solitude. Facing a still body of water, its surface mirrors the
+            <br>pale, cloud-streaked sky above, yet seems unnervingly lifeless—no
+            <br>ripples, no movement, as though frozen in quiet defiance of the world.
+            <br>The air is thick with a damp chill, and a faint scent of decay drifts on an
+            <br>otherwise empty breeze. No birds call, no insects hum; the silence is
+            <br>oppressive, broken only by the occasional creak of the bench as though
+            <br>it, too, struggles under the weight of the stillness.
+            <br>Click the arrows to explore.</p>
+        </div>
+        <div class="arrow-buttons" id="arrowButtons">
+           <img src="resources/arrow_left.png" id="leftBtn">
+           <img src="resources/arrow_right.png" id="rightBtn">
+        </div>
+        <div class="overlay" id="videoOverlay" style="display: none;">
+            <div class="video-container">
+                <button class="close-btn" id="closeBtn">X</button>
+                <video id="videoElement" autoplay>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="controls">
+                    <label for="volumeSlider">Volume:</label>
+                    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+                </div>
+                <button id="playButton" class="play-button">❚❚</button>
+            </div>
+        </div>
+        <a href="#brickscapeInfo"><img src="resources/down.png" class="down-btn"></a>
+    </section>
+    <section class="brickscape-info" id="brickscapeInfo">
+        <img src="resources/info_pic.png">
+        <div class="info-text">
+            <h2>The Silent Shore</h2>
+            <p1>At city outskirts, beyond a ghostly neighbourhood lies the vast unknown. As you walk past the houses, you can already see the large empty field. But before you reach the plains, the pathway branches, leaving you with two options: 
+                -The left path takes you to a lonely, damp, wooden bench with an unsettling atmosphere. Dare you sit on the bench, you could embrace the vibe and feel the presence of otherworldly beings. 
+                -The right path goes along a lake. The still, reflective water looks stuck in time. Perhaps it is dominated by spirits that need to be released from a grueling time loop.
+                Nevertheless, a serene location in which one could escape the city and ponder in peace.
+                </p1>
+            <div class="location-pin">
+                <img src="resources/location1_map.png" alt="Map of location">
+                <div class="location-link">
+                    <p>56°07'38.2"N 10°05'59.0"E</p>
+                    <a href="https://www.google.com/maps/place/56°07'38.2''N+10°05'59.0''E/@56.1272757,10.0990733,171m/data=!3m2!1e3!4b1!4m8!1m3!11m2!2sFdLXYkr_iH-Coy4Uc-4vuwxTE_vVYQ!3e3!3m3!8m2!3d56.127275!4d10.099717?entry=ttu&g_ep=EgoyMDI0MTIwNC4wIKXMDSoASAFQAw%3D%3D"><p>Open in maps🔗</p></a>
+                </div>
+            </div>
+        </div>
+        <a href="#reviewsSection"><img src="resources/down.png" class="down-btn2"></a>
+    </section>
+    <section class="reviews-section" id="reviewsSection">
+        <h2>What others think of the location</h2>
+        <div class="reviews" id="reviewss">
+        </div>
+        <h4>Have you visited it yet? Share your experience!<h4>
+        <div class="leave-a-review">
+            <textarea id="reviewInput" rows="4" placeholder="How was your experience?"></textarea>
+            <div class="email-and-share">
+                <textarea id="emailInput" rows="1" placeholder="Your Email(hidden)"></textarea> 
+                <button id="saveButton">Share</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contact">
+            <h4>Contact Us</h4>
+            <p>contact@uaup.com</p>
+            <p>+45558689xx</p>
+        </div>
+        <div class="newsletter">
+            <h4>Still not frightened?</h4>
+            <p>Subscribe to our newsletter to get the latest locations.</p>
+            <div class="user-email">
+                <textarea id="userEmailInput" rows="1" placeholder="Your Email"></textarea>
+                <div id="validEmail">
+                    <p>Enter a valid Email.</p>
+                </div>
+                <button id="subscribeBtn">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+    <script src="shore.js"></script>    
+</body>
